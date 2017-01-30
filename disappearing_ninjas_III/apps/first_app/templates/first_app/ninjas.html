@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        {% load staticfiles %}
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Ninjas</h1>
+        {% if ninja == 'all' %}
+        <img src="{% static 'first_app/images/donatello.jpg'%}" alt="donatello"/>
+        <img src="{% static 'first_app/images/donatello.jpg'%}" alt="donatello"/>
+        <img src="{% static 'first_app/images/donatello.jpg'%}" alt="donatello"/>
+        <img src="{% static 'first_app/images/donatello.jpg'%}" alt="donatello"/>
+
+        {% else %}
+
+        <img src="{% static 'first_app/images/'%}{{ninja}}.jpg" alt="">
+        {% endif %}
+    </body>
+</html>

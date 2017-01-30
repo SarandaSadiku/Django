@@ -1,0 +1,23 @@
+*{
+    font-family: monospace;
+}
+#container{
+    width: 900px;
+    padding: 10px;
+}
+div{
+    width: 430px;
+    display: inline-block;
+    vertical-align: top;
+}
+input{
+    display: block;
+}
+input.submit{
+    background-color: #09a741;
+    color: white;
+    border: 1px solid;
+}
+.error{
+    color: red;
+}
